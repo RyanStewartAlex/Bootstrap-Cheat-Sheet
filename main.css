@@ -1,0 +1,79 @@
+.container:not(#homepage) {
+	margin-right: 40em;
+}
+
+.home-icon {
+    position: absolute;
+    width: 3em;
+    height: 3em;
+    margin: 2em 0 0 2em;
+}
+
+.home-icon svg path {
+    fill: #000;
+}
+
+.well p {
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 1.3em;
+	text-decoration: underline wavy;
+	opacity: 0.6;
+}
+
+.page-header {
+	font-weight: bolder;
+	text-decoration: underline;
+}
+
+h3 {
+	font-weight: bold;
+}
+
+tr th {
+	text-align: center;
+}
+
+.carousel {
+	max-height: 50em;
+	overflow: hidden;
+}
+
+.carousel-caption {
+	margin-bottom: 16em;
+} 
+
+.carousel-caption button {
+	margin-top: 2em;
+}
+
+.carousel-inner h1 {
+	text-align: center;
+	color:  white;
+	text-transform: uppercase;
+	font-family: 'Gloria Hallelujah', cursive;
+	font-size: 6em;
+}
+
+.carousel-inner img {
+	filter: brightness(50%);
+}
+
+#icon-row nav {
+	display: inline-flex;
+}
+
+#icon-row {
+	display: inline-flex;
+}
+
+#icon-row nav h1{
+	margin-right: 0.5em;
+	margin-left: 0.5em;
+}
+
+#contextualcolors span {
+	font-size: 2em;
+	display: block;
+	font-weight: bold;
+}

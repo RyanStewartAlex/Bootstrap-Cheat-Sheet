@@ -1,0 +1,309 @@
+<html>
+<head>
+    <title>Bootstrap Stuff</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width = device-width, initial-scale = 1" />
+    <meta name="author" content="Ryan Stewart" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="main.css" type="text/css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <style>
+        li {
+            text-align: center;
+        }
+
+        .disabled {
+            color: lightgray;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="home-icon">
+        <a href="index.html">
+            <svg height="inherit" viewBox="0 0 24 24" width="inherit" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
+            </svg>
+        </a>
+    </div>
+    
+
+    <div class="container">
+        <h1 class="page-header">Drop-down Menus</h1>
+        <p>Create button with class of "<strong>.dropdown-toggle</strong>" and with attribute "data-toggle" set to "dropdown". Then make an unordered list with class of "<strong>.dropdown-menu</strong>". The list items can have the classes of "<strong>.dropdown-header</strong>", "<strong>.divider</strong>" with a role of "seperator", and "<strong>.disabled</strong>".</p>
+        <div class="dropdown">
+
+            <button class="btn btn-primary dropdown-toggle btn-lg" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">DropDown Menu <span class="caret"></span></button>
+        
+
+            <ul class="dropdown-menu">
+                <li class="dropdown-header">Food List</a></li>
+                <li><a href="#"><a href="#">Carrots</a></li>
+                <li><a href="#">Oranges</a></li>
+                <li><a href="#">Cake</a></li>
+                <li role="seperator" class="divider"></a></li>
+                <li class="dropdown-header">Games</a></li>
+                <li><a href="#">Fallout 4</a></li>
+                <li class="disabled">Crash Bandicoot</a></li>
+                <li><a href="#">Halo 3</a></li>
+                <li><a href="#">Half Life</a></li>
+            </ul>
+        </div>
+        <br/>
+        <pre>
+            &lt;div class=&quot;dropdown&quot;&gt;
+
+                &lt;button class=&quot;btn btn-primary dropdown-toggle btn-lg&quot; type=&quot;button&quot; id=&quot;dropdownMenu1&quot; data-toggle=&quot;dropdown&quot; aria-haspopup=&quot;true&quot; aria-expanded=&quot;true&quot;&gt;DropDown Menu &lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;&lt;/button&gt;
+            
+
+                &lt;ul class=&quot;dropdown-menu&quot;&gt;
+                    &lt;li class=&quot;dropdown-header&quot;&gt;Food List&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;&lt;a href=&quot;#&quot;&gt;Carrots&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Oranges&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Cake&lt;/a&gt;&lt;/li&gt;
+                    &lt;li role=&quot;seperator&quot; class=&quot;divider&quot;&gt;&lt;/a&gt;&lt;/li&gt;
+                    &lt;li class=&quot;dropdown-header&quot;&gt;Games&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Fallout 4&lt;/a&gt;&lt;/li&gt;
+                    &lt;li class=&quot;disabled&quot;&gt;Crash Bandicoot&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Halo 3&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Half Life&lt;/a&gt;&lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/div&gt;
+        </pre>
+    </div>
+    
+    <br/>
+    <div class="container">
+        <h1 class="page-header">Input Groups</h1>
+        <p>The thing to the right/left of the input that says what it is. (e.g. "Your Name"). Make div with class "<strong>input-group input-group-*</strong>" and put a span with class of "<strong>.input-group-addon</strong>" inside of it. Then add input below it.</p>
+        <br/>
+        <p><strong>.input-group-lg</strong> class</p>
+        <div class="input-group input-group-lg">
+            <span class="input-group-addon">Your Name</span>
+            <input type="text" class="form-control" placeholder="Full Name"/>
+        </div>
+        <br/>
+        <p><strong>.input-group-sm</strong> class</p>
+        <div class="input-group input-group-sm">
+            <span class="input-group-addon">Your Address</span>
+            <input type="text" class="form-control" placeholder="Address"/>
+        </div>
+        <br/>
+        <p><strong>.input-group-sm</strong> but with <strong>.input-group-btn</strong> instead of <strong>.input-group-addon</strong> class &amp; the input was put before the button so it's on the right side.</p>
+        <div class="input-group input-group-md">
+            <input type="text" class="form-control" placeholder="Leave feedback here"/>
+            <span class="input-group-btn"><button class="btn btn-md btn-primary">Submit</button></span>
+        </div>
+        
+        <br/>
+        <pre>
+        &lt;div class=&quot;input-group input-group-lg&quot;&gt;
+            &lt;span class=&quot;input-group-addon&quot;&gt;Your Name&lt;/span&gt;
+            &lt;input type=&quot;text&quot; class=&quot;form-control&quot; placeholder=&quot;Full Name&quot;/&gt;
+        &lt;/div&gt;
+        &lt;br/&gt;
+        &lt;div class=&quot;input-group input-group-sm&quot;&gt;
+            &lt;span class=&quot;input-group-addon&quot;&gt;Your Address&lt;/span&gt;
+            &lt;input type=&quot;text&quot; class=&quot;form-control&quot; placeholder=&quot;Address&quot;/&gt;
+        &lt;/div&gt;
+        &lt;br/&gt;
+        &lt;div class=&quot;input-group input-group-md&quot;&gt;
+            &lt;input type=&quot;text&quot; class=&quot;form-control&quot; placeholder=&quot;Leave feedback here&quot;/&gt;
+            &lt;span class=&quot;input-group-btn&quot;&gt;&lt;button class=&quot;btn btn-md btn-primary&quot;&gt;Submit&lt;/button&gt;&lt;/span&gt;
+        &lt;/div&gt;
+        </pre>
+    </div>
+
+    <br/>
+    <div class="container">
+        <h1 class="page-header">Horizontal/Vertical Groups</h1>
+        <p>Creates horizontal list. Make unordered list with class of "<strong>.list-inline</strong>".</p>
+        <br/>
+        <ul class="list-inline">
+            <li><a href="#">Home</a></li>
+            <li><div class="input-group input-group-sm" style="width: 13em;">
+                <input type="text" class="form-control" placeholder="Search"/>
+                <span class="input-group-btn"><button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search"/></button></span>
+            </div></li>
+            <li><a href="#" class="text-success" style="font-size:1.5em; text-transform: uppercase; text-decoration: underline dotted">Experience</a></li>
+            <li><button type="button" class="btn btn-md btn-success"><a href="#" style="color:cyan; font-weight:700;">Click To Win!</a></button></li>
+        </ul>
+        <br/>
+        <p>Vertical lists created with "<strong>.nav nav-pills nav-stacked</strong> classes."
+        <ul class="nav nav-pills nav-stacked pull-left">
+            <li>item1</li>
+            <li>item2</li>
+            <li>item3</li>
+        </ul>
+
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <pre>
+        &lt;ul class=&quot;list-inline&quot;&gt;
+            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;div class=&quot;input-group input-group-sm&quot; style=&quot;width: 13em;&quot;&gt;
+                &lt;input type=&quot;text&quot; class=&quot;form-control&quot; placeholder=&quot;Search&quot;/&gt;
+                &lt;span class=&quot;input-group-btn&quot;&gt;&lt;button class=&quot;btn btn-default&quot; type=&quot;button&quot;&gt;&lt;span class=&quot;glyphicon glyphicon-search&quot;/&gt;&lt;/button&gt;&lt;/span&gt;
+            &lt;/div&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;text-success&quot; style=&quot;font-size:1.5em; text-transform: uppercase; text-decoration: underline dotted&quot;&gt;Experience&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;button type=&quot;button&quot; class=&quot;btn btn-md btn-success&quot;&gt;&lt;a href=&quot;#&quot; style=&quot;color:cyan; font-weight:700;&quot;&gt;Click To Win!&lt;/a&gt;&lt;/button&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;br/&gt;
+        &lt;p&gt;Vertical lists created with &quot;&lt;strong&gt;.nav nav-pills nav-stacked&lt;/strong&gt; classes.&quot;
+        &lt;ul class=&quot;nav nav-pills nav-stacked pull-left&quot;&gt;
+            &lt;li&gt;item1&lt;/li&gt;
+            &lt;li&gt;item2&lt;/li&gt;
+            &lt;li&gt;item3&lt;/li&gt;
+        &lt;/ul&gt;
+        </pre>
+    </div>
+
+    <br/>
+    <div class="container">
+        <h1 class="page-header">Tabbed Menus</h1>
+        <p>Click on a button and have different items show. Create an unordered list with the classes "<strong>.nav</strong>" and "<strong>.nav-tabs</strong>". Inside that unordered list create list items with links inside of them. The first must have the class "<strong>.active</strong>". and all must have the "data-toggle='tab' attribute. The links' href should be set to whatever id you want to show, i.e "#firsttab". Outside of the unordered list, create a div with the class "<strong>.tab-content</strong>". Inside of that, create divs with the ids you linked to earlier. The classes must have the classes "<strong>.tab-pane</strong>" and "<strong>.fade</strong>". The first tab to be shown must have the classes "<strong>.in</strong>" and "<strong>.active</strong>". </p>
+        <br/>
+        <ul class="nav nav-tabs">
+            <li class="active"><a data-toggle="tab" href="#firsttab">First Tab</a></li>
+            <li><a data-toggle="tab" href="#secondtab">Second Tab</a></li>
+            <li><a data-toggle="tab" href="#thirdtab">Third Tab</a></li>
+        </ul>
+
+        <div class="tab-content">
+            <div id="firsttab" class="tab-pane fade in active"><p class="well">My first tab text!</p></div>
+            <div id="secondtab" class="tab-pane fade"><p class="well">My second tab text!</p></div>
+            <div id="thirdtab" class="tab-pane fade"><p class="well">My third tab text!</p></div>
+        </div>
+
+        <br/>
+        <pre>
+        &lt;ul class=&quot;nav nav-tabs&quot;&gt;
+            &lt;li class=&quot;active&quot;&gt;&lt;a data-toggle=&quot;tab&quot; href=&quot;#firsttab&quot;&gt;First Tab&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a data-toggle=&quot;tab&quot; href=&quot;#secondtab&quot;&gt;Second Tab&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a data-toggle=&quot;tab&quot; href=&quot;#thirdtab&quot;&gt;Third Tab&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+
+        &lt;div class=&quot;tab-content&quot;&gt;
+            &lt;div id=&quot;firsttab&quot; class=&quot;tab-pane fade in active&quot;&gt;&lt;p class=&quot;well&quot;&gt;My first tab text!&lt;/p&gt;&lt;/div&gt;
+            &lt;div id=&quot;secondtab&quot; class=&quot;tab-pane fade&quot;&gt;&lt;p class=&quot;well&quot;&gt;My second tab text!&lt;/p&gt;&lt;/div&gt;
+            &lt;div id=&quot;thirdtab&quot; class=&quot;tab-pane fade&quot;&gt;&lt;p class=&quot;well&quot;&gt;My third tab text!&lt;/p&gt;&lt;/div&gt;
+        &lt;/div&gt;
+        </pre>
+    </div>
+
+    <br/>
+    <div class="container">
+        <h1 class="page-header">Responsive Navigation Bar</h1>
+        <p>It changes to a hamburger menu after the window gets small enough (such as on mobile).</p>
+        <br/>
+
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#examplenavbar" aria-expanded="false">
+                        <span class="sr-only"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                    <a class="pull-left" href="#"><img width="30px" src="https://www.mozilla.org/media/img/styleguide/identity/firefox/guidelines-logo.7ea045a4e288.png" style="margin-top:0.8em;margin-right:1em;"/></a>
+                </div>
+
+                <div class="collapse navbar-collapse" id="examplenavbar">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
+                        <li><a href="#">About</a></li>
+                        <form class="navbar-form navbar-left">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Search"/>
+                            </div>
+                            <button type="button" class="btn btn-md btn-default">Search</button>
+                        </form>
+                    </ul>    
+                </div>
+
+            </div>
+        </nav>
+        
+        <br/>
+        <pre>
+        &lt;nav class=&quot;navbar navbar-default&quot;&gt;
+            &lt;div class=&quot;container-fluid&quot;&gt;
+                &lt;div class=&quot;navbar-header&quot;&gt;
+                    &lt;button type=&quot;button&quot; class=&quot;navbar-toggle collapsed&quot; data-toggle=&quot;collapse&quot; data-target=&quot;#examplenavbar&quot; aria-expanded=&quot;false&quot;&gt;
+                        &lt;span class=&quot;sr-only&quot;&gt;&lt;/span&gt;
+                        &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+                        &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+                        &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+                    &lt;/button&gt;
+
+                    &lt;a class=&quot;pull-left&quot; href=&quot;#&quot;&gt;&lt;img width=&quot;30px&quot; src=&quot;https://www.mozilla.org/media/img/styleguide/identity/firefox/guidelines-logo.7ea045a4e288.png&quot; style=&quot;margin-top:0.8em;margin-right:1em;&quot;/&gt;&lt;/a&gt;
+                &lt;/div&gt;
+
+                &lt;div class=&quot;collapse navbar-collapse&quot; id=&quot;examplenavbar&quot;&gt;
+                    &lt;ul class=&quot;nav navbar-nav&quot;&gt;
+                        &lt;li class=&quot;active&quot;&gt;&lt;a href=&quot;#&quot;&gt;Home &lt;span class=&quot;sr-only&quot;&gt;(current)&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;About&lt;/a&gt;&lt;/li&gt;
+                        &lt;form class=&quot;navbar-form navbar-left&quot;&gt;
+                            &lt;div class=&quot;form-group&quot;&gt;
+                                &lt;input type=&quot;text&quot; class=&quot;form-control&quot; placeholder=&quot;Search&quot;/&gt;
+                            &lt;/div&gt;
+                            &lt;button type=&quot;button&quot; class=&quot;btn btn-md btn-default&quot;&gt;Search&lt;/button&gt;
+                        &lt;/form&gt;
+                    &lt;/ul&gt;    
+                &lt;/div&gt;
+
+            &lt;/div&gt;
+        &lt;/nav&gt;
+        </pre>
+    </div>
+
+    <br/>
+    <div class="container">
+        <h1 class="page-header">Pagination</h1>
+        <p>Pagination is having and controlling page numbers on your website. Create nav with unordered list with the class "<strong>.pagination</strong>" inside of it.</p>
+        <br/>
+
+        <nav>
+            <ul class="pagination">
+                <li><a href="#" aria-label="previous"><span aria-hidden="true">&laquo;</span></a></li>
+                <li><a href="#">1</a>
+                <li><a href="#">2</a>
+                <li><a href="#">3</a>
+                <li><a href="#">4</a>
+                <li><a href="#">5</a>
+                <li><a href="#" aria-label="next"><span aria-hidden="true">&raquo;</span></a></li>
+            </ul>
+        </nav>
+
+        <br/>
+    <pre>
+    <nav>
+    &lt;nav&gt;
+        &lt;ul class=&quot;pagination&quot;&gt;
+            &lt;li&gt;&lt;a href=&quot;#&quot; aria-label=&quot;previous&quot;&gt;&lt;span aria-hidden=&quot;true&quot;&gt;&amp;laquo;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;1&lt;/a&gt;
+            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;2&lt;/a&gt;
+            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;3&lt;/a&gt;
+            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;4&lt;/a&gt;
+            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;5&lt;/a&gt;
+            &lt;li&gt;&lt;a href=&quot;#&quot; aria-label=&quot;next&quot;&gt;&lt;span aria-hidden=&quot;true&quot;&gt;&amp;raquo;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/nav&gt;
+    </nav>
+    </pre>
+    </div>
+
+    
+    
+
+</body>
+</html>

@@ -1,0 +1,190 @@
+<html>
+<head>
+    <title>Bootstrap Stuff</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width = device-width, initial-scale = 1" />
+    <meta name="author" content="Ryan Stewart" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="main.css" type="text/css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah&effect=3d" type="text/css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+    <div class="home-icon">
+        <a href="index.html">
+            <svg height="inherit" viewBox="0 0 24 24" width="inherit" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
+            </svg>
+        </a>
+    </div>
+    
+    <div class="container">
+        <h1 class="page-header">Rows and Columns w/ Responsive Design</h1> 
+        <p>Columns resize with screen size. Uses <b>col-xs-*</b>, <b>col-sm-*</b>, <b>col-md-*</b>, <b>col-lg-*</b> to set sizes, and <b>collapse</b> or <b>collapse in</b> for sliding animation.
+        <br />
+        <h3>Collapsable Divs:</h3>
+        <div class="row">
+            <div class="col-lg-2 col-md-2 col-sm-4 col-xs-12">
+
+                <h2><a href="#col1" data-toggle="collapse">Collapse Column 1!</a></h2>
+
+                <div id="col1" class="collapse in"> <!-- The "in" in Collapse In makes the text show first, then on click close -->
+                        Sit quis officia est consequat adipisicing qui mollit exercitation ea sint consectetur veniam cillum occaecat.
+                </div>
+
+            </div>
+
+            <div class="col-lg-2 col-md-2 col-sm-4 col-xs-12">
+
+                <h2><a href="#col2" data-toggle="collapse">Show Column 2!</a></h2>
+
+                <div id="col2" class="collapse"> <!-- The lack of "in" in Collapse makes the text show later on click -->
+                    Sit quis officia est consequat adipisicing qui mollit exercitation ea sint consectetur veniam cillum occaecat.
+                </div>
+            </div>
+        </div>
+
+        <br/>
+        <pre>
+        &lt;div class=&quot;row&quot;&gt;
+            &lt;div class=&quot;col-lg-2 col-md-2 col-sm-4 col-xs-12&quot;&gt;
+
+                &lt;h2&gt;&lt;a href=&quot;#col1&quot; data-toggle=&quot;collapse&quot;&gt;Collapse Column 1!&lt;/a&gt;&lt;/h2&gt;
+
+                &lt;div id=&quot;col1&quot; class=&quot;collapse in&quot;&gt; &lt;!-- The &quot;in&quot; in Collapse In makes the text show first, then on click close --&gt;
+                        Sit quis officia est consequat adipisicing qui mollit exercitation ea sint consectetur veniam cillum occaecat.
+                &lt;/div&gt;
+
+            &lt;/div&gt;
+
+            &lt;div class=&quot;col-lg-2 col-md-2 col-sm-4 col-xs-12&quot;&gt;
+
+                &lt;h2&gt;&lt;a href=&quot;#col2&quot; data-toggle=&quot;collapse&quot;&gt;Show Column 2!&lt;/a&gt;&lt;/h2&gt;
+
+                &lt;div id=&quot;col2&quot; class=&quot;collapse&quot;&gt; &lt;!-- The lack of &quot;in&quot; in Collapse makes the text show later on click --&gt;
+                    Sit quis officia est consequat adipisicing qui mollit exercitation ea sint consectetur veniam cillum occaecat.
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        </pre>
+    </div>
+
+
+    <br />
+    <br />
+    
+    <div class="container">
+        <h3>Self-Adjusting Paragraphs:</h3>
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12"> <!-- lg: 1200px or more; md: 992px and more; sm: 768px and up; xsm: 768px and less.-->
+                <h3>Col 1</h3>
+                <p>Nisi qui incididunt ullamco aute adipisicing nulla aliquip consequat incididunt duis non proident. Reprehenderit nisi ullamco eiusmod non laboris et commodo irure non exercitation sit. Excepteur proident qui irure consectetur veniam cillum quis. Ut dolore id cillum non sit cupidatat dolor consectetur id ea culpa reprehenderit duis consectetur dolor enim. Officia pariatur nostrud tempor tempor laborum fugiat consectetur.</p>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12"> 
+                <h3>Col 2</h3>
+                <p>Nisi qui incididunt ullamco aute adipisicing nulla aliquip consequat incididunt duis non proident. Reprehenderit nisi ullamco eiusmod non laboris et commodo irure non exercitation sit. Excepteur proident qui irure consectetur veniam cillum quis. Ut dolore id cillum non sit cupidatat dolor consectetur id ea culpa reprehenderit duis consectetur dolor enim. Officia pariatur nostrud tempor tempor laborum fugiat consectetur.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                <h3>Col 3</h3>
+                <p>Nisi qui incididunt ullamco aute adipisicing nulla aliquip consequat incididunt duis non proident. Reprehenderit nisi ullamco eiusmod non laboris et commodo irure non exercitation sit. Excepteur proident qui irure consectetur veniam cillum quis. Ut dolore id cillum non sit cupidatat dolor consectetur id ea culpa reprehenderit duis consectetur dolor enim. Officia pariatur nostrud tempor tempor laborum fugiat consectetur.</p>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                <h3>Col 4</h3>
+                <p>Nisi qui incididunt ullamco aute adipisicing nulla aliquip consequat incididunt duis non proident. Reprehenderit nisi ullamco eiusmod non laboris et commodo irure non exercitation sit. Excepteur proident qui irure consectetur veniam cillum quis. Ut dolore id cillum non sit cupidatat dolor consectetur id ea culpa reprehenderit duis consectetur dolor enim. Officia pariatur nostrud tempor tempor laborum fugiat consectetur.</p>
+            </div>
+        </div>
+
+            <br/>
+            <pre>
+            &lt;div class=&quot;row&quot;&gt;
+                &lt;div class=&quot;col-lg-4 col-md-6 col-sm-6 col-xs-12&quot;&gt; &lt;!-- lg: 1200px or more; md: 992px and more; sm: 768px and up; xsm: 768px and less.--&gt;
+                    &lt;h3&gt;Col 1&lt;/h3&gt;
+                    &lt;p&gt;Nisi qui incididunt ullamco aute adipisicing nulla aliquip consequat incididunt duis non proident. Reprehenderit nisi ullamco eiusmod non laboris et commodo irure non exercitation sit. Excepteur proident qui irure consectetur veniam cillum quis. Ut dolore id cillum non sit cupidatat dolor consectetur id ea culpa reprehenderit duis consectetur dolor enim. Officia pariatur nostrud tempor tempor laborum fugiat consectetur.&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;col-lg-4 col-md-6 col-sm-6 col-xs-12&quot;&gt; 
+                    &lt;h3&gt;Col 2&lt;/h3&gt;
+                    &lt;p&gt;Nisi qui incididunt ullamco aute adipisicing nulla aliquip consequat incididunt duis non proident. Reprehenderit nisi ullamco eiusmod non laboris et commodo irure non exercitation sit. Excepteur proident qui irure consectetur veniam cillum quis. Ut dolore id cillum non sit cupidatat dolor consectetur id ea culpa reprehenderit duis consectetur dolor enim. Officia pariatur nostrud tempor tempor laborum fugiat consectetur.&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;row&quot;&gt;
+                &lt;div class=&quot;col-lg-4 col-md-6 col-sm-6 col-xs-12&quot;&gt;
+                    &lt;h3&gt;Col 3&lt;/h3&gt;
+                    &lt;p&gt;Nisi qui incididunt ullamco aute adipisicing nulla aliquip consequat incididunt duis non proident. Reprehenderit nisi ullamco eiusmod non laboris et commodo irure non exercitation sit. Excepteur proident qui irure consectetur veniam cillum quis. Ut dolore id cillum non sit cupidatat dolor consectetur id ea culpa reprehenderit duis consectetur dolor enim. Officia pariatur nostrud tempor tempor laborum fugiat consectetur.&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;col-lg-4 col-md-6 col-sm-6 col-xs-12&quot;&gt;
+                    &lt;h3&gt;Col 4&lt;/h3&gt;
+                    &lt;p&gt;Nisi qui incididunt ullamco aute adipisicing nulla aliquip consequat incididunt duis non proident. Reprehenderit nisi ullamco eiusmod non laboris et commodo irure non exercitation sit. Excepteur proident qui irure consectetur veniam cillum quis. Ut dolore id cillum non sit cupidatat dolor consectetur id ea culpa reprehenderit duis consectetur dolor enim. Officia pariatur nostrud tempor tempor laborum fugiat consectetur.&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            </pre>
+        </div>
+
+        <br />
+        <br />
+        <h3>Hide/Show Only on Certain Screen Sizes (resize web window to see hidden objects!)</h3>
+        <br />
+        <h4>
+            <ul>
+                <li class="hidden-xs">
+                    This text hides on extra-small screens!
+                </li>
+                <li class="hidden-sm">
+                    This text hides on small screens!
+                </li>
+                <li class="hidden-md">
+                    This text hides on medium screens!
+                </li>
+                <li class="hidden-lg">
+                    This text hides on large screens!
+                </li>
+            </ul>
+        </h4>
+
+        
+    </div>
+    
+    <br/>
+
+    <div class="well hidden-md">
+        <p>This section hides itself when the screen is medium.</p>
+    </div>
+
+    <br/><br/>
+
+
+    <div class="container">
+        <pre>
+        &lt;h4&gt;
+            &lt;ul&gt;
+                &lt;li class=&quot;hidden-xs&quot;&gt;
+                    This text hides on extra-small screens!
+                &lt;/li&gt;
+                &lt;li class=&quot;hidden-sm&quot;&gt;
+                    This text hides on small screens!
+                &lt;/li&gt;
+                &lt;li class=&quot;hidden-md&quot;&gt;
+                    This text hides on medium screens!
+                &lt;/li&gt;
+                &lt;li class=&quot;hidden-lg&quot;&gt;
+                    This text hides on large screens!
+                &lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/h4&gt;
+
+        &lt;div class=&quot;well hidden-md&quot;&gt;
+            &lt;p&gt;This section hides itself when the screen is medium.&lt;/p&gt;
+        &lt;/div&gt;
+        </pre>
+        <br/>
+    </div>
+
+        
+
+</body>
+</html>

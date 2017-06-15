@@ -1,0 +1,114 @@
+<html>
+<head>
+    <title>Bootstrap Stuff</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width = device-width, initial-scale = 1" />
+    <meta name="author" content="Ryan Stewart" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="main.css" type="text/css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Patrick+Hand+SC&effect=3d-float|3d" type="text/css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <style>
+
+        .home-icon {
+            position: absolute;
+            width: 3em;
+            height: 3em;
+            margin: 2em 0 0 2em;
+        }
+
+        .home-icon svg path {
+            fill: #FFF;
+        }
+
+        .blur-cover {
+            z-index: -1;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            border-style: solid;
+            border-color: #050505;
+            border-width: 0em;
+            box-shadow: 0 0 2000px black inset;
+        }
+
+        .bg-img {
+            filter: brightness(40%) blur(5px);
+            z-index: -2;
+            position: absolute;
+            background-image: url("http://i.imgur.com/85CPfmi.jpg");
+            height: 100%;
+            width: 100%;
+            background-position: center;
+            background-size: cover;
+        }
+
+        .title {
+            text-transform: uppercase;
+            text-align: center;
+            font-family: 'Patrick Hand SC', 'cursive';
+            font-weight: 900;
+            font-size: 4.5em;
+            color: white;
+            margin-top: 4em;
+            text-decoration: underline double;
+        }
+
+        nav {
+            margin-top: 3em;
+            text-align: center;
+        }
+
+        nav h1 {
+            text-transform: uppercase;
+            font-family: 'Patrick Hand SC', 'cursive';
+            font-weight: bolder;
+            font-size: 2em;
+            color: white;
+            opacity: .8;
+            display: inline-table;
+            margin-left: 1em;
+        }
+
+        nav h1 a, nav h1 a:hover, nav h1 a:active, nav h1 a:visited {
+            color: inherit;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="home-icon">
+        <a href="index.html">
+            <svg height="inherit" viewBox="0 0 24 24" width="inherit" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
+            </svg>
+        </a>
+    </div>
+
+    <div class="blur-cover"></div>
+    <div class="bg-img"></div>
+
+    <div id="homepage" class="container">
+        <h1 class="title font-effect-3d">bootstrap cheat sheet</h1>
+        <nav>
+            <h1 class="font-effect-3d-float"><a href="jumbotron.html">Jumbotron</a></h1>
+            <h1 class="font-effect-3d-float"><a href="buttons.html">Buttons</a></h1>
+            <h1 class="font-effect-3d-float"><a href="responsivecolumns.html">Responsive Columns</a></h1>
+            <h1 class="font-effect-3d-float"><a href="tables.html">Tables</a></h1>
+            <h1 class="font-effect-3d-float"><a href="carousels.html">Carousels</a></h1>
+            <h1 class="font-effect-3d-float"><a href="icons.html">Icons</a></h1>
+            <h1 class="font-effect-3d-float"><a href="styling.html">Styling</a></h1>
+            <h1 class="font-effect-3d-float"><a href="menus.html">Menus</a></h1>
+            <h1 class="font-effect-3d-float"><a href="loadingbar.html">Loading Bar</a></h1>
+            <h1 class="font-effect-3d-float"><a href="listgroupsandbadges.html">List Groups &amp; Badges</a></h1>
+            <h1 class="font-effect-3d-float"><a href="foodblogexample.html">Ex 1: Food Blog</a></h1>
+            <h1 class="font-effect-3d-float"><a href="clothesstoreexample.html">Ex 2: Clothes Store</a></h1>
+        </nav>
+    </div>
+</body>
+</html>

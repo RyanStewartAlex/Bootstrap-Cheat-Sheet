@@ -1,0 +1,150 @@
+<html>
+<head>
+  <title>Bootstrap Stuff</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width = device-width, initial-scale = 1" />
+  <meta name="author" content="Ryan Stewart" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css" />
+  <link rel="stylesheet" href="main.css" type="text/css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah&effect=3d" type="text/css"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+  <div class="home-icon">
+    <a href="index.html">
+    <svg height="inherit" viewBox="0 0 24 24" width="inherit" xmlns="http://www.w3.org/2000/svg">
+      <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
+    </svg>
+    </a>
+  </div>
+
+
+  <div class="container">
+  	<h1 class="page-header">Loading Bars</h1>
+  	<p>Showing different styles and lengths. If you were to want to make them move, that's done through javascript.</p>
+  	<br/>
+  	<h3>Striped at 94%</h3>
+	<div class="progress">
+		<div class="progress-bar progress-bar-striped" role="progresbar" style="width:94%;"></div>
+	</div>
+	<br/>
+	<h3>Striped at 43%</h3>
+	<div class="progress">
+		<div class="progress-bar progress-bar-striped" role="progresbar" style="width:43%;"></div>
+	</div>
+	<br/>
+	<h3>Regular at 63%</h3>
+	<div class="progress">
+		<div class="progress-bar progress-bar" role="progresbar" style="width:63%;"></div>
+	</div>
+	<br/>
+	<h3>Regular at 27%</h3>
+	<div class="progress">
+		<div class="progress-bar progress-bar" role="progresbar" style="width:27%;"></div>
+	</div>
+	<br/>
+	<h3>Striped Warning at 50%</h3>
+	<div class="progress">
+		<div class="progress-bar progress-bar-striped progress-bar-warning" role="progresbar" style="width:50%;color:green;"></div>
+	</div>
+	<br/>
+	<h3>Striped Danger at 25%</h3>
+	<div class="progress">
+		<div class="progress-bar progress-bar-striped progress-bar-danger" role="progresbar" style="width:25%;"></div>
+	</div>
+	<br/>
+	<h3>Regular info at 91%</h3>
+	<div class="progress">
+		<div class="progress-bar progress-bar progress-bar-info" role="progresbar" style="width:91%;"></div>
+	</div>
+	<br/>
+	<h3>Regular success at 99%</h3>
+	<div class="progress">
+		<div class="progress-bar progress-bar progress-bar-success" role="progresbar" style="width:99%;"></div>
+	</div>
+	<br/>
+	<h3>Animated Striped at 56%</h3>
+	<div class="progress">
+		<div class="active progress-bar progress-bar-striped" role="progresbar" style="width:56%;"></div>
+	</div>
+	<br/>
+	<h3>Animated Regular Warning at 84% <span><h5>(No Difference)</h5></span></h3>
+	<div class="progress">
+		<div class="active progress-bar progress-bar-warning" role="progresbar" style="width:84%;"></div>
+	</div>
+	<br/>
+	<h3>Stacked Default, Success, and Animated Striped Danger all at 20%</h3>
+	<div class="progress">
+		<div class="progress-bar" role="progresbar" style="width:20%;"></div>
+		<div class="progress-bar progress-bar-success" role="progresbar" style="width:20%;"></div>
+		<div class="progress-bar progress-bar-striped progress-bar-danger active" role="progresbar" style="width:20%;"></div>
+	</div>
+	<br/>
+
+		<pre>
+		&lt;h3&gt;Striped at 94%&lt;/h3&gt;
+		&lt;div class=&quot;progress&quot;&gt;
+			&lt;div class=&quot;progress-bar progress-bar-striped&quot; role=&quot;progresbar  style=&quot;width:94%;&quot;&gt;&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;br/&gt;
+		&lt;h3&gt;Striped at 43%&lt;/h3&gt;
+		&lt;div class=&quot;progress&quot;&gt;
+			&lt;div class=&quot;progress-bar progress-bar-striped&quot; role=&quot;progresbar&quot; style=&quot;width:43%;&quot;&gt;&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;br/&gt;
+		&lt;h3&gt;Regular at 63%&lt;/h3&gt;
+		&lt;div class=&quot;progress&quot;&gt;
+			&lt;div class=&quot;progress-bar progress-bar&quot; role=&quot;progresbar&quot; style=&quot;width:63%;&quot;&gt;&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;br/&gt;
+		&lt;h3&gt;Regular at 27%&lt;/h3&gt;
+		&lt;div class=&quot;progress&quot;&gt;
+			&lt;div class=&quot;progress-bar progress-bar&quot; role=&quot;progresbar&quot; style=&quot;width:27%;&quot;&gt;&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;br/&gt;
+		&lt;h3&gt;Striped Warning at 50%&lt;/h3&gt;
+		&lt;div class=&quot;progress&quot;&gt;
+			&lt;div class=&quot;progress-bar progress-bar-striped progress-bar-warning&quot; role=&quot;progresbar&quot; style=&quot;width:50%;color:green;&quot;&gt;&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;br/&gt;
+		&lt;h3&gt;Striped Danger at 25%&lt;/h3&gt;
+		&lt;div class=&quot;progress&quot;&gt;
+			&lt;div class=&quot;progress-bar progress-bar-striped progress-bar-danger&quot; role=&quot;progresbar&quot; style=&quot;width:25%;&quot;&gt;&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;br/&gt;
+		&lt;h3&gt;Regular info at 91%&lt;/h3&gt;
+		&lt;div class=&quot;progress&quot;&gt;
+			&lt;div class=&quot;progress-bar progress-bar progress-bar-info&quot; role=&quot;progresbar&quot; style=&quot;width:91%;&quot;&gt;&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;br/&gt;
+		&lt;h3&gt;Regular success at 99%&lt;/h3&gt;
+		&lt;div class=&quot;progress&quot;&gt;
+			&lt;div class=&quot;progress-bar progress-bar progress-bar-success&quot; role=&quot;progresbar&quot; style=&quot;width:99%;&quot;&gt;&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;br/&gt;
+		&lt;h3&gt;Animated Striped at 56%&lt;/h3&gt;
+		&lt;div class=&quot;progress&quot;&gt;
+			&lt;div class=&quot;active progress-bar progress-bar-striped&quot; role=&quot;progresbar&quot; style=&quot;width:56%;&quot;&gt;&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;br/&gt;
+		&lt;h3&gt;Animated Regular Warning at 84% &lt;span&gt;&lt;h5&gt;(No Difference)&lt;/h5&gt;&lt;/span&gt;&lt;/h3&gt;
+		&lt;div class=&quot;progress&quot;&gt;
+			&lt;div class=&quot;active progress-bar progress-bar-warning&quot; role=&quot;progresbar&quot; style=&quot;width:84%;&quot;&gt;&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;br/&gt;
+		&lt;h3&gt;Stacked Default, Success, and Animated Striped Danger all at 20%&lt;/h3&gt;
+		&lt;div class=&quot;progress&quot;&gt;
+			&lt;div class=&quot;progress-bar&quot; role=&quot;progresbar&quot; style=&quot;width:20%;&quot;&gt;&lt;/div&gt;
+			&lt;div class=&quot;progress-bar progress-bar-success&quot; role=&quot;progresbar&quot; style=&quot;width:20%;&quot;&gt;&lt;/div&gt;
+			&lt;div class=&quot;progress-bar progress-bar-striped progress-bar-danger active&quot; role=&quot;progresbar&quot; style=&quot;width:20%;&quot;&gt;&lt;/div&gt;
+		&lt;/div&gt;
+		</pre>
+	</div>
+
+
+</body>
+</html>

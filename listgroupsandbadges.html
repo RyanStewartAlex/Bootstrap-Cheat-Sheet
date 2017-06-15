@@ -1,0 +1,161 @@
+<html>
+<head>
+    <title>Bootstrap Stuff</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width = device-width, initial-scale = 1" />
+    <meta name="author" content="Ryan Stewart" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <style>
+
+        .home-icon {
+            position: absolute;
+            width: 3em;
+            height: 3em;
+            margin: 2em 0 0 2em;
+        }       
+
+        .home-icon svg path {
+            fill: #000;
+        }
+
+        h4 {
+            font-size: 2em;
+        }
+        
+        #toplistgroup a {
+            color: inherit;
+            text-align: center;
+            font-size: 1.5em;
+        }
+
+        #toplistgroup a:hover, #toplistgroup a:active, #toplistgroup a:visited {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        #toplistgroup {
+            width: 30em;
+            margin-left: 30em;
+        }
+
+        .list-group {
+            bottom: 0;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .well {
+            background-color: white;
+            border-color: orangered;
+            margin: 0;
+            padding: 0;
+            border: 2px 0 2px 0 red;
+        }
+
+        .list-group-item button {
+            float: right;
+            margin-top: -3.3em;
+        }
+
+
+
+    </style>
+</head>
+
+<body>
+    
+    <div class="home-icon">
+        <a href="index.html">
+            <svg height="inherit" viewBox="0 0 24 24" width="inherit" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
+            </svg>
+        </a>
+    </div>
+
+    
+    <div class="container">
+        <h1 class="page-header">List Groups &amp; Badges</h1>
+        <p>List groups are groups of combined list buttons, and badges are a little icon indicating a value (usually a number).</p>
+    </div>
+
+    <ul id="toplistgroup" class="list-group">
+        <li class="list-group-item"><a href="#">I am regular</a></li>
+        <li class="list-group-item disabled"><a href="#">I am disabled</a></li>
+        <li class="list-group-item"><a href="#">I contain a badge <span class="badge">100 unread emails</span></a></li>
+        <li class="list-group-item list-group-item-warning">I am a warning list item</li>
+        <li class="list-group-item list-group-item-danger">I am a danger list item</li>
+        <li class="list-group-item list-group-item-info">I am a info list item</li>
+        <li class="list-group-item list-group-item-success">I am a success list item</li>
+    </ul>
+
+    
+
+
+    <div class="container">
+        <br/><br/>
+        <a href="#" class="list-group-item">Add Account</a>
+        <a href="#" class="list-group-item active">
+            <h4 class="list-group-item-heading">Delete Account</h4>
+            <p class="list-group-item-text">This is permanent</p>
+        </a>
+        <a href="#" class="list-group-item">Check mail <span class="badge">102</span></a>
+        <br/>
+        <pre>
+        &lt;ul id=&quot;toplistgroup&quot; class=&quot;list-group&quot;&gt;
+            &lt;li class=&quot;list-group-item&quot;&gt;&lt;a href=&quot;#&quot;&gt;I am regular&lt;/a&gt;&lt;/li&gt;
+            &lt;li class=&quot;list-group-item disabled&quot;&gt;&lt;a href=&quot;#&quot;&gt;I am disabled&lt;/a&gt;&lt;/li&gt;
+            &lt;li class=&quot;list-group-item&quot;&gt;&lt;a href=&quot;#&quot;&gt;I contain a badge &lt;span class=&quot;badge&quot;&gt;100 unread emails&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+            &lt;li class=&quot;list-group-item list-group-item-warning&quot;&gt;I am a warning list item&lt;/li&gt;
+            &lt;li class=&quot;list-group-item list-group-item-danger&quot;&gt;I am a danger list item&lt;/li&gt;
+            &lt;li class=&quot;list-group-item list-group-item-info&quot;&gt;I am a info list item&lt;/li&gt;
+            &lt;li class=&quot;list-group-item list-group-item-success&quot;&gt;I am a success list item&lt;/li&gt;
+        &lt;/ul&gt;
+
+        
+
+
+        &lt;div class=&quot;container&quot;&gt;
+            &lt;br/&gt;&lt;br/&gt;
+            &lt;a href=&quot;#&quot; class=&quot;list-group-item&quot;&gt;Add Account&lt;/a&gt;
+            &lt;a href=&quot;#&quot; class=&quot;list-group-item active&quot;&gt;
+                &lt;h4 class=&quot;list-group-item-heading&quot;&gt;Delete Account&lt;/h4&gt;
+                &lt;p class=&quot;list-group-item-text&quot;&gt;This is permanent&lt;/p&gt;
+            &lt;/a&gt;
+            &lt;a href=&quot;#&quot; class=&quot;list-group-item&quot;&gt;Check mail &lt;span class=&quot;badge&quot;&gt;102&lt;/span&gt;&lt;/a&gt;...
+
+        </pre>
+        <br/>
+        <h3>Case Study: GitHub Settings</h3>
+        <hr/><br/>
+        <h4>Danger Zone</h4>
+        <div class="well">
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <p><b>Make this repository private</b></p>
+                    <p>Please <a href="#">upgrade your plan</a> to make this reposity private </p>
+                    <button type="button" class="btn btn-md btn-default disabled" role="button"><span style="color:red;">Make private</span></button>
+                </li>
+                <li class="list-group-item">
+                    <p><b>Transfer ownership</b></p>
+                    <p>Transfer this repository to another user or to an organisation where you have the ability to create repositories.</p>
+                    <button type="button" class="btn btn-md btn-default " role="button"><span style="color:red;">Transfer</span></button>
+                </li>
+                <li class="list-group-item">
+                    <p><b>Delete this repository</b></p>
+                    <p>Once you delete a repository, there is no going back. Please be certain.</p>
+                    <button type="button" class="btn btn-md btn-default " role="button"><span style="color:red;">Delete this repository</span></button>
+                </li>
+
+            </ul>
+        </div>
+        
+    </div>
+
+    
+
+</body>
+</html>
