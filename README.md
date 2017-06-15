@@ -2,4 +2,4 @@
 
 GitHub pages website for reference :)
 
-[Link to website](http://www.ryanstewartalex.github.io/bootstrap-cheat-sheet)
+[Link to website](http://www.RyanStewartAlex.github.io/Bootstrap-Cheat-Sheet/)
